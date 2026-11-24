@@ -1,0 +1,1004 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavita Chandrakant Gosavi | Academic Portfolio</title>
+
+<style>
+:root {
+  --navy:#263b59;
+  --blue:#557da8;
+  --pale:#edf4fa;
+  --pink:#f7e9ec;
+  --ink:#293747;
+}
+.academic-text {
+  line-height: 1.8;
+  color: #43546a;
+}
+
+.academic-text h3 {
+  color: #557da8;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.academic-text p {
+  margin-bottom: 12px;
+}
+
+.academic-text ul,
+.academic-text ol {
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.academic-text li {
+  margin-bottom: 6px;
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html { scroll-behavior:smooth; }
+
+body {
+  font-family:"Segoe UI",Arial,sans-serif;
+  color:var(--ink);
+  background:#f8fafc;
+  line-height:1.6;
+}
+
+header {
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 12px #263b5912;
+}
+
+nav {
+  max-width:1150px;
+  margin:auto;
+  padding:15px 22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.logo {
+  font-weight:800;
+  color:var(--navy);
+  font-size:19px;
+}
+
+nav a {
+  color:var(--ink);
+  text-decoration:none;
+  margin:0 8px;
+  font-size:14px;
+}
+
+nav a:hover { color:var(--blue); }
+
+section {
+  max-width:1150px;
+  margin:auto;
+  padding:65px 22px;
+}
+
+.hero {
+  max-width:none;
+  background:linear-gradient(120deg,#edf4fa,#f9edf0);
+  padding:75px 22px;
+}
+
+.hero-inner {
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:45px;
+  flex-wrap:wrap;
+}
+
+.profile {
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  background:white;
+  border:7px solid white;
+  box-shadow:0 8px 25px #263b5920;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+.hero h1 {
+  font-size:clamp(30px,5vw,48px);
+  color:var(--navy);
+  line-height:1.2;
+}
+
+.hero p { margin-top:12px; color:#536579; }
+
+.tag {
+  display:inline-block;
+  background:white;
+  padding:7px 14px;
+  border-radius:30px;
+  margin-top:15px;
+  color:var(--blue);
+  font-size:13px;
+}
+
+h2 {
+  color:var(--navy);
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.sub {
+  color:#718094;
+  margin-bottom:28px;
+}
+
+.about-box {
+  background:white;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 5px 20px #263b590b;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:18px;
+}
+
+.card {
+  background:white;
+  border:1px solid #e8edf2;
+  border-radius:17px;
+  padding:23px;
+  text-decoration:none;
+  color:var(--ink);
+  transition:.25s;
+  box-shadow:0 4px 15px #263b5908;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 12px 25px #263b5918;
+  border-color:#b9cde0;
+}
+
+.number {
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border-radius:13px;
+  background:var(--pale);
+  color:var(--blue);
+  font-weight:800;
+  margin-bottom:15px;
+}
+
+.card h3 { color:var(--navy); font-size:18px; }
+.card p { font-size:13px; color:#758397; margin-top:7px; }
+
+.panel {
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  margin:18px 0;
+  box-shadow:0 4px 18px #263b590b;
+}
+
+.panel h3 { color:var(--navy); margin-bottom:8px; }
+
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:15px;
+  margin-top:15px;
+}
+
+.gallery img {
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:13px;
+  background:var(--pale);
+  transition:.25s;
+}
+
+.gallery img:hover { transform:scale(1.02); }
+
+.photo-caption {
+  font-size:12px;
+  color:#718094;
+  margin-top:5px;
+}
+
+.empty {
+  background:var(--pale);
+  padding:20px;
+  border-radius:12px;
+  color:#55718d;
+}
+
+footer {
+  text-align:center;
+  background:var(--navy);
+  color:white;
+  padding:25px;
+  font-size:13px;
+}
+
+.small { font-size:13px; color:#748398; }
+
+@media(max-width:600px) {
+  nav { justify-content:center; }
+  nav a { margin:0 5px; }
+  .hero-inner { justify-content:center; text-align:center; }
+  .hero { padding:50px 18px; }
+  section { padding:45px 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <div class="logo">KCG | Academic Portfolio</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#presentations">📊 Presentations</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-inner">
+
+    <img class="profile"
+         src="assets/profile.jpeg"
+         alt="Kavita Chandrakant Gosavi"
+         onerror="this.style.display='none'">
+
+    <div>
+      <p class="small">MY ACADEMIC PORTFOLIO · 2026–2027</p>
+      <h1>Kavita Chandrakant Gosavi</h1>
+      <p>B.Ed. Second Year Student</p>
+      <p>Genba Sopanrao Moze Adhyapak Mahavidyalaya, Pune</p>
+      <span class="tag">Learning · Teaching · Innovation · Reflection</span>
+    </div>
+
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p class="sub">My educational journey and teaching experiences</p>
+
+  <div class="about-box">
+    <p>Welcome to my academic portfolio. This portfolio presents my academic work, teaching-learning activities, lesson planning, projects, presentations, certificates and reflections developed during my B.Ed. programme.</p>
+    <br>
+    <p><b>Institution:</b> Genba Sopanrao Moze Adhyapak Mahavidyalaya, Pune</p>
+    <p><b>Programme:</b> Bachelor of Education (B.Ed.)</p>
+    <p><b>Academic Year:</b> 2026–2027</p>
+    <p><b>Class:</b> B.Ed. Second Year</p>
+  </div>
+</section>
+
+<section id="subjects">
+  <h2>Academic Portfolio</h2>
+  <p class="sub">Select a subject to explore its academic activities and work.</p>
+  <div class="grid" id="subjectGrid"></div>
+</section>
+
+<section id="details">
+  <h2 id="detailTitle">Subject Details</h2>
+  <p class="sub" id="detailSubtitle">Select a subject card above.</p>
+
+  <div id="detailContent" class="about-box">
+    Choose any subject card to view its content here.
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates & Achievements</h2>
+  <p class="sub">Certificates and recognitions earned during my academic journey.</p>
+  <div class="gallery" id="certificateGallery"></div>
+</section>
+<section id="presentations">
+  <h2>📊 PowerPoint Presentations</h2>
+  <p class="sub">Subject-wise academic presentations</p>
+
+  <div class="grid">
+    <a class="card" href="assets/301/301%20Presentation-0.pptx" target="_blank">
+      <div class="number">301</div>
+      <h3>Advanced, Innovative and Digital Pedagogy</h3>
+      <p>View / Download Presentation</p>
+    </a>
+
+    <a class="card" href="assets/302/302-0.pptx" target="_blank">
+      <div class="number">302</div>
+      <h3>Quality & Management of School Education</h3>
+      <p>View / Download Presentation</p>
+    </a>
+    <a class="card" href="assets/303/303.pptx" target="_blank">
+  <div class="number">303</div>
+  <h3>Introduction to Psychology</h3>
+  <p>View / Download Presentation</p>
+</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Institutional Details</h2>
+  <div class="about-box">
+    <h3>Genba Sopanrao Moze Adhyapak Mahavidyalaya</h3>
+    <p>B.Ed. Second Year | Academic Year 2026–2027</p>
+    <p class="small">Academic Portfolio of Kavita Chandrakant Gosavi</p>
+  </div>
+</section>
+
+<footer>
+  © 2026–2027 Kavita Chandrakant Gosavi · Academic Portfolio
+</footer>
+
+<script>
+const subjects = [
+ ["301","Advanced, Innovative and Digital Pedagogy","Flipped Learning & Learning Management System"],
+ ["302","Quality & Management of School Education","Classroom Management & Student Assessment"],
+ ["303","Introduction to Psychology","Psychology and educational activities"],
+ ["304","Pedagogy of School Subject","History lesson plans and teaching activities"],
+ ["305","Understanding Disciplines and Subjects","Educational personalities and school activities"],
+ ["306","Knowledge and Curriculum","Classroom, gardening and research activities"],
+ ["307-A","School Internship","School-based academic activities"],
+ ["307-B","School Internship Activities","Group work and internship experiences"],
+ ["308-A","Engagement with the Field","Field activities and experiences"],
+ ["308-B","Engagement with the Field","Academic work and written records"],
+ 
+];
+
+/*
+  IMPORTANT:
+  Add the exact photo filenames for each subject here.
+  Example: photo1.jpg, photo2.jpg, photo3.jpg
+*/
+
+const photoFiles = {
+ "301": ["photo1.jpeg","photo2.jpeg","photo3.jpeg","photo4.jpeg","photo5.jpeg"],
+ "302": ["photo1.jpeg","photo2.jpeg","photo3.jpeg"],
+ "303": ["photo1.jpeg","photo2.jpeg","photo3.jpeg"],
+ "304": ["photo1.jpeg","photo2.jpeg","photo3.jpeg"],
+ "305": ["photo1.jpeg","photo2.jpeg","photo3.jpeg","photo4.jpeg","photo4.jpeg","photo5.jpeg","photo6.jpeg","photo7.jpeg"],
+ "306": ["photo1.jpeg","photo2.jpeg","photo3.jpeg","photo4.jpeg",],
+ "307-A": ["photo1.jpeg","photo2.jpeg","photo3.jpeg"],
+ "307-B": ["photo1.jpeg","photo2.jpeg","photo3.jpeg"],
+ "308-A": ["photo1.jpeg","photo2.jpeg","photo3.jpeg","photo4.jpeg","photo5.jpeg"],
+ "308-B": [],
+ 
+};
+
+const grid = document.getElementById("subjectGrid");
+
+subjects.forEach((s,i) => {
+  const card = document.createElement("a");
+  card.className = "card";
+  card.href = "#details";
+  card.innerHTML = `
+    <div class="number">${s[0]}</div>
+    <h3>${s[1]}</h3>
+    <p>${s[2]}</p>
+  `;
+
+  card.addEventListener("click", () => showSubject(i));
+  grid.appendChild(card);
+});
+
+const academicContent = {
+
+ 
+"301": `
+  <h3>B.Ed. 301 – Advanced, Innovative and Digital Pedagogy</h3>
+
+  <p>
+    <b>Credits:</b> 4 &nbsp; | &nbsp;
+    <b>Hours:</b> 60 &nbsp; | &nbsp;
+    <b>Marks:</b> 100 (30 + 70)
+  </p>
+
+  <h3>1. Course Overview</h3>
+  <p>
+    This course focuses on contemporary approaches to teaching and learning.
+    It encourages student teachers to move beyond one-way lecture methods
+    and design active, inclusive, learner-centred experiences supported by
+    suitable technology. Digital tools should serve clear learning goals,
+    not replace sound pedagogy.
+  </p>
+
+  <h3>2. Learning Objectives</h3>
+  <ul>
+    <li>Explain the meaning, nature and importance of pedagogy and digital pedagogy.</li>
+    <li>Compare traditional, learner-centred, constructivist, collaborative, experiential and inquiry-based approaches.</li>
+    <li>Select innovative teaching strategies according to learning objectives, learner needs and subject matter.</li>
+    <li>Use digital resources responsibly for lesson preparation, presentation, interaction and assessment.</li>
+    <li>Evaluate the educational value, accessibility, safety and limitations of technology.</li>
+  </ul>
+
+  <h3>3. Detailed Course Content / Key Areas</h3>
+  <ul>
+    <li>Learner-centred and constructivist teaching; active learning and experiential learning.</li>
+    <li>Cooperative learning, project-based learning, problem-based learning, inquiry and discovery approaches.</li>
+    <li>Flipped classroom, blended learning, hybrid learning and differentiated instruction.</li>
+    <li>Digital content: presentations, educational videos, simulations, virtual resources, e-content and open educational resources.</li>
+    <li>Learning Management Systems, online assignments, digital collaboration and formative assessment tools.</li>
+    <li>Universal Design for Learning, accessibility, inclusive digital content and multiple ways of learner participation.</li>
+    <li>Digital citizenship, cyber safety, privacy, copyright, plagiarism, screen balance and responsible use of AI-supported tools.</li>
+    <li>Criteria for selecting and evaluating digital teaching-learning material.</li>
+  </ul>
+
+  <h3>4. Suggested Learning Activities and Practical Work</h3>
+  <ol>
+    <li>Prepare a lesson plan integrating one suitable digital resource and explain why it supports the objective.</li>
+    <li>Create a short digital presentation, infographic, quiz or learning worksheet for a school topic.</li>
+    <li>Compare a conventional teaching method with an innovative strategy for the same topic.</li>
+    <li>Design a flipped-classroom or blended-learning activity with pre-class and classroom tasks.</li>
+    <li>Prepare a checklist to evaluate the accuracy, age appropriateness, accessibility and safety of an online resource.</li>
+  </ol>
+
+  <h3>5. Expected Learning Outcomes</h3>
+  <ul>
+    <li>Design learner-centred lessons with clear objectives and purposeful activities.</li>
+    <li>Choose appropriate innovative methods and digital resources for a given classroom context.</li>
+    <li>Create or adapt digital teaching-learning material.</li>
+    <li>Use technology ethically, inclusively and safely.</li>
+    <li>Reflect on the effectiveness of a teaching strategy using learner participation and feedback.</li>
+  </ul>
+`,
+
+
+ 
+"302": `
+  <h3>B.Ed. 302 – Quality & Management of School Education</h3>
+
+  <p>
+    <b>Credits:</b> 4 &nbsp; | &nbsp;
+    <b>Hours:</b> 60 &nbsp; | &nbsp;
+    <b>Marks:</b> 100 (30 + 70)
+  </p>
+
+  <h3>1. Course Overview</h3>
+  <p>
+    This course develops an understanding of school quality and the processes
+    through which schools are organised, led, monitored and improved.
+    It connects educational aims with planning, leadership, administration,
+    community participation and a safe learning environment.
+  </p>
+
+  <h3>2. Learning Objectives</h3>
+  <ul>
+    <li>Explain the meaning and dimensions of quality in school education.</li>
+    <li>Understand school organisation, administration, leadership and institutional planning.</li>
+    <li>Identify the roles and responsibilities of school leaders, teachers, committees and stakeholders.</li>
+    <li>Examine school evaluation, accountability, inclusion, infrastructure and learning outcomes.</li>
+    <li>Suggest practical steps for improving the quality of a school.</li>
+  </ul>
+
+  <h3>3. Detailed Course Content / Key Areas</h3>
+  <ul>
+    <li>Concept of quality education: access, equity, relevance, effectiveness, efficiency and learner achievement.</li>
+    <li>School as an organisation; vision, mission, goals, school culture and institutional climate.</li>
+    <li>School leadership styles, instructional leadership, distributed leadership and teamwork.</li>
+    <li>School development planning, academic calendar, timetable, workload and resource management.</li>
+    <li>Teacher professional development, collaboration, supervision, classroom observation and feedback.</li>
+    <li>School records and documentation: admission, attendance, progress, assessment, stock and meeting records.</li>
+    <li>School Management Committee, parent-teacher association, community participation and stakeholder partnership.</li>
+    <li>School infrastructure, sanitation, safety, child protection, health, accessibility and disaster preparedness.</li>
+    <li>Quality assurance, self-evaluation, school improvement plans and use of evidence for decisions.</li>
+    <li>Equity, inclusive education, gender sensitivity and support for diverse learners.</li>
+  </ul>
+
+  <h3>4. Suggested Learning Activities and Practical Work</h3>
+  <ol start="6">
+    <li>Prepare a school profile using observation or a permitted case study: facilities, staffing, learning environment and community links.</li>
+    <li>Draft a simple school improvement plan identifying one priority, action steps, resources and indicators.</li>
+    <li>Prepare an organisational chart showing key school roles and responsibilities.</li>
+    <li>Study a school record format and explain how it supports planning and accountability.</li>
+    <li>Conduct a mock staff meeting or parent-teacher interaction role-play and reflect on communication.</li>
+  </ol>
+
+  <h3>5. Expected Learning Outcomes</h3>
+  <ul>
+    <li>Describe major dimensions of school quality.</li>
+    <li>Explain the functions of school leadership and institutional management.</li>
+    <li>Understand how planning, records, evaluation and community participation support school improvement.</li>
+    <li>Identify barriers to quality and propose realistic, inclusive solutions.</li>
+    <li>Demonstrate professional responsibility, teamwork and ethical handling of school information.</li>
+  </ul>
+`,
+
+
+ 
+"303": `
+  <h3>B.Ed. 303 – Understanding Disciplines and Pedagogy of School Subject</h3>
+
+  <p>
+    <b>Credits:</b> 4 &nbsp; | &nbsp;
+    <b>Hours:</b> 60 &nbsp; | &nbsp;
+    <b>Marks:</b> 100 (30 + 70)
+  </p>
+
+  <h3>1. Course Overview</h3>
+  <p>
+    This course explores the nature of school knowledge and the relationship
+    between an academic discipline and the way it is taught in school.
+    The syllabus specifies one subject other than the subject opted under BED103.
+    The selected subject must be entered below and the course-specific examples,
+    lesson plans and assignments should be adapted accordingly.
+  </p>
+
+  <h3>2. Learning Objectives</h3>
+  <ul>
+    <li>Explain the meaning and characteristics of a discipline, school subject and school knowledge.</li>
+    <li>Understand how knowledge is organised, developed and represented in the selected subject.</li>
+    <li>Relate subject content to learners' everyday experiences and prior knowledge.</li>
+    <li>Analyse curriculum, textbooks and learning resources from a pedagogical perspective.</li>
+    <li>Select suitable methods, activities and assessment strategies for the selected subject.</li>
+  </ul>
+
+  <h3>3. Detailed Course Content / Key Areas</h3>
+  <ul>
+    <li><b>Selected school subject:</b> ______________________________ (to be completed by student).</li>
+    <li>Nature, scope, structure and aims of the selected discipline.</li>
+    <li>Relationship of the discipline with other subjects and with everyday life.</li>
+    <li>Development of subject knowledge and important contributors, ideas or milestones, as relevant.</li>
+    <li>School curriculum, syllabus, textbook analysis, sequencing and grade-level appropriateness.</li>
+    <li>Common misconceptions and learning difficulties in the selected subject.</li>
+    <li>Pedagogical approaches: discussion, demonstration, inquiry, activity-based learning, problem-solving and projects, as appropriate.</li>
+    <li>Use of teaching-learning materials, laboratory/library/community resources and digital resources, as relevant.</li>
+    <li>Subject-specific assessment: oral, written, practical, performance-based and formative assessment.</li>
+    <li>Multilingual classroom practices, inclusion, differentiation and support for diverse learners.</li>
+  </ul>
+
+  <h3>4. Suggested Learning Activities and Practical Work</h3>
+  <ol start="11">
+    <li>Analyse one chapter from the relevant school textbook: objectives, concepts, activities, illustrations and assessment.</li>
+    <li>Prepare a concept map showing the structure and connections within the selected subject.</li>
+    <li>Identify three likely misconceptions and design strategies to address them.</li>
+    <li>Prepare one lesson plan using a suitable subject-specific method and teaching-learning material.</li>
+    <li>Design a short formative assessment with a marking scheme or criteria.</li>
+    <li>Connect one topic from the subject to another discipline or a real-life situation.</li>
+  </ol>
+
+  <h3>5. Expected Learning Outcomes</h3>
+  <ul>
+    <li>Explain the nature and structure of the selected subject.</li>
+    <li>Analyse textbooks and curriculum materials critically.</li>
+    <li>Choose subject-appropriate teaching strategies and learning resources.</li>
+    <li>Anticipate misconceptions and respond to learner diversity.</li>
+  </ul>
+`,
+
+
+ 
+"304": `
+  <h3>BED304 – Teaching Competency-IV: Practice Lessons</h3>
+  <p><b>Credits:</b> 2 &nbsp; | &nbsp; <b>Hours:</b> 30 &nbsp; | &nbsp; <b>Marks:</b> 50 (50 + 0)</p>
+
+  <h3>1. Course Overview</h3>
+  <p>This practical course provides opportunities to rehearse and improve teaching competencies before and during school-based teaching. Practice lessons should be planned, presented, observed and revised with feedback from peers and teacher educators.</p>
+
+  <h3>2. Learning Objectives</h3>
+  <ul>
+    <li>Prepare a lesson plan with measurable learning outcomes and a logical teaching sequence.</li>
+    <li>Develop communication, explanation, questioning, reinforcement and classroom interaction skills.</li>
+    <li>Use suitable teaching-learning materials and board work effectively.</li>
+    <li>Manage time, learner participation and transitions during a lesson.</li>
+    <li>Use feedback and self-reflection to improve teaching performance.</li>
+  </ul>
+
+  <h3>3. Detailed Course Content / Key Areas</h3>
+  <ul>
+    <li>Understanding lesson objectives and expected learning outcomes.</li>
+    <li>Lesson introduction, previous-knowledge testing and motivation.</li>
+    <li>Presentation and development: explanation, examples, demonstration and learner activities. Questioning skills: clarity, distribution, probing, wait time and higher-order questions.</li>
+    <li>Stimulus variation, reinforcement, illustration with examples and use of teaching aids.</li>
+    <li>Board work, voice modulation, classroom language, non-verbal communication and time management.</li>
+    <li>Closure, recap, assessment for learning and assignment/homework.</li>
+    <li>Peer observation, feedback, self-evaluation and re-teaching.</li>
+  </ul>
+
+  <h3>4. Suggested Learning Activities and Practical Work</h3>
+  <ol start="17">
+    <li>Prepare practice lesson plans in the prescribed college format.</li>
+    <li>Present lessons to peers or a designated group and collect structured feedback.</li>
+    <li>Observe a peer's lesson and record strengths and one or two specific improvement points.</li>
+    <li>Revise a lesson plan after feedback and explain the changes.</li>
+    <li>Maintain a practice lesson record with date, topic, duration, teaching aids and mentor remarks.</li>
+  </ol>
+
+  <h3>5. Expected Learning Outcomes</h3>
+  <ul>
+    <li>Plan and present a coherent lesson aligned with learning outcomes.</li>
+    <li>Demonstrate effective explanation, questioning and classroom communication.</li>
+    <li>Use teaching aids purposefully and manage lesson time.</li>
+    <li>Assess learner understanding during the lesson.</li>
+    <li>Reflect on feedback and demonstrate improvement across practice attempts.</li>
+  </ul>
+`,
+
+"305": `
+  <h3>BED305 – Teaching Competency-V: Internship (8 Weeks)</h3>
+  <p><b>Credits:</b> 4 &nbsp; | &nbsp; <b>Hours:</b> 60 &nbsp; | &nbsp; <b>Marks:</b> 100 (100 + 0)</p>
+
+  <h3>1. Course Overview</h3>
+  <p>The eight-week internship provides sustained experience in a real school setting. It enables the student teacher to understand school routines, work with learners and teachers, plan and teach lessons, participate in school activities and reflect on professional responsibilities. All entries must be based on actual internship experience and verified according to college and school requirements.</p>
+
+  <h3>2. Learning Objectives</h3>
+  <ul>
+    <li>Understand the functioning, culture and daily routines of a school.</li>
+    <li>Apply educational theory and pedagogical knowledge in real classroom situations.</li>
+    <li>Plan, teach and assess lessons under the guidance of school mentors.</li>
+    <li>Develop professional relationships with learners, teachers, parents and school staff.</li>
+    <li>Participate responsibly in co-curricular, administrative and community-related school activities.</li>
+    <li>Maintain accurate records and reflect on professional growth.</li>
+  </ul>
+
+  <h3>3. Detailed Course Content / Key Areas</h3>
+  <ul>
+    <li>Orientation to the internship school: profile, vision, timetable, staff, facilities and rules.</li>
+    <li>Classroom observation: learner diversity, teaching methods, interaction, assessment and classroom climate.</li>
+    <li>Lesson planning and teaching in allotted subject/classes as prescribed.</li>
+    <li>Preparation and use of teaching-learning materials and worksheets.</li>
+    <li>Assessment of learners: questioning, classwork, homework, tests, feedback and remedial support.</li>
+    <li>Participation in assembly, clubs, sports, cultural activities, celebrations or other school programmes, as permitted.</li>
+    <li>Understanding school records, teacher duties, parent communication and staff collaboration.</li>
+    <li>Professional conduct: punctuality, confidentiality, child safety, inclusive language and ethical behaviour.</li>
+    <li>Daily/weekly reflective journal and mentor feedback.</li>
+  </ul>
+
+  <h3>4. Suggested Learning Activities and Practical Work</h3>
+  <ol start="22">
+    <li>Complete a school profile and internship orientation record.</li>
+    <li>Maintain a daily diary with date, class, tasks, lessons and learning.</li>
+    <li>Prepare and teach lesson plans as assigned, attach approved plans and feedback.</li>
+    <li>Prepare teaching-learning materials and samples of learner activities, with privacy protected.</li>
+    <li>Record classroom observations and reflect on strategies that support participation.</li>
+    <li>Document participation in school activities and any permitted responsibilities.</li>
+    <li>Prepare a final internship report summarising experiences, challenges, learning and future goals.</li>
+  </ol>
+
+  <h3>5. Expected Learning Outcomes</h3>
+  <ul>
+    <li>Demonstrate readiness for school teaching and professional conduct.</li>
+    <li>Translate curriculum and lesson objectives into classroom practice.</li>
+    <li>Use inclusive teaching and appropriate assessment strategies.</li>
+    <li>Collaborate with school staff and participate in school life.</li>
+    <li>Maintain systematic records and use mentor feedback for improvement.</li>
+    <li>Identify personal strengths and areas for further professional development.</li>
+  </ul>
+`,
+
+"306": `
+  <h3>BED306 – Educational Research Project</h3>
+  <p><b>Credits:</b> 2 &nbsp; | &nbsp; <b>Hours:</b> 30 &nbsp; | &nbsp; <b>Marks:</b> 50 (50 + 0)</p>
+
+  <h3>1. Course Overview</h3>
+  <p>This course introduces systematic inquiry into educational questions. A small research project helps the student teacher identify a classroom or school-related issue, review relevant literature, collect and analyse information ethically, and draw evidence-based conclusions. The topic and methodology should be approved by the course teacher.</p>
+
+  <h3>2. Learning Objectives</h3>
+  <ul>
+    <li>Understand the meaning, purpose and basic steps of educational research.</li>
+    <li>Identify a feasible problem related to teaching, learning or school practice.</li>
+    <li>Frame research objectives and questions clearly.</li>
+    <li>Select suitable methods and tools for collecting information.</li>
+    <li>Organise, analyse and interpret data responsibly.</li>
+    <li>Prepare a structured report and present findings.</li>
+  </ul>
+
+  <h3>3. Detailed Course Content / Key Areas</h3>
+  <ul>
+    <li>Meaning, nature, scope and importance of educational research.</li>
+    <li>Types and approaches: descriptive, survey, case study, action research and other introductory approaches.</li>
+    <li>Identification and statement of a research problem; rationale and delimitations.</li>
+    <li>Review of related literature and use of credible sources.</li>
+    <li>Research objectives, questions, hypotheses where appropriate and operational definitions.</li>
+    <li>Sampling, participants, research tools: questionnaire, interview, observation schedule, achievement test and checklist.</li>
+    <li>Ethics: informed consent, confidentiality, voluntary participation, child protection and honest reporting.</li>
+    <li>Basic data organisation, tables, graphs, percentages and qualitative themes.</li>
+    <li>Findings, discussion, limitations, suggestions, references and report writing.</li>
+  </ul>
+
+  <h3>4. Suggested Learning Activities and Practical Work</h3>
+  <ol start="29">
+    <li>Select a manageable educational topic with teacher approval.</li>
+    <li>Prepare a brief problem statement, rationale, objectives and research questions.</li>
+    <li>Review relevant books, articles or reports and prepare a short literature summary.</li>
+    <li>Develop a simple data collection tool and obtain required permission/consent.</li>
+    <li>Collect and analyse a small set of data without identifying participants.</li>
+    <li>Prepare a report with introduction, method, results, discussion, conclusion, limitations and references.</li>
+    <li>Present the project and respond to questions.</li>
+  </ol>
+
+  <h3>5. Expected Learning Outcomes</h3>
+  <ul>
+    <li>Identify a meaningful and feasible educational problem.</li>
+    <li>Prepare research objectives and select a suitable method and tool.</li>
+    <li>Collect and analyse information ethically.</li>
+    <li>Present findings accurately without exaggeration or fabrication.</li>
+    <li>Recognise limitations and suggest practical, evidence-informed action.</li>
+  </ul>
+`,
+
+"307-A": `
+  <h3>BED307 – A) Positive Behavior Support in Education</h3>
+  <p><b>Credits:</b> 2 (1 + 1) &nbsp; | &nbsp; <b>Hours:</b> 30 &nbsp; | &nbsp; <b>Marks:</b> 50 (50 + 0)</p>
+
+  <h3>1. Course Focus</h3>
+  <p>This component develops a preventive, respectful and supportive approach to student behaviour. It views behaviour in context and aims to build a positive classroom climate through clear expectations, meaningful engagement, encouragement and appropriate support.</p>
+
+  <h3>2. Objectives</h3>
+  <ul>
+    <li>Understand factors that influence student behaviour and classroom participation.</li>
+    <li>Create a safe, respectful and predictable classroom environment.</li>
+    <li>Use positive reinforcement, routines and proactive strategies.</li>
+    <li>Respond to challenging behaviour calmly, consistently and without humiliation.</li>
+    <li>Recognise when a learner may need additional support and follow school procedures.</li>
+  </ul>
+
+  <h3>3. Key Areas</h3>
+  <ul>
+    <li>Meaning and principles of positive behaviour support; strengths-based and preventive approaches.</li>
+    <li>Classroom rules, routines, expectations and relationship-building.</li>
+    <li>Positive reinforcement, specific praise, encouragement and motivation.</li>
+    <li>Understanding triggers, unmet needs, peer influences and classroom context.</li>
+    <li>De-escalation, restorative conversations, conflict resolution and problem-solving.</li>
+    <li>Bullying prevention, child protection, inclusion, emotional safety and referral pathways.</li>
+    <li>Monitoring behaviour patterns while respecting learner dignity and confidentiality.</li>
+  </ul>
+
+  <h3>4. Suggested Activities</h3>
+  <ol start="36">
+    <li>Develop a short set of positively worded classroom expectations.</li>
+    <li>Prepare a classroom routine chart for entry, group work, transitions and closure.</li>
+    <li>Analyse a fictional classroom case and suggest supportive, non-punitive responses.</li>
+    <li>Role-play a restorative conversation after a classroom disagreement.</li>
+    <li>Design a simple observation checklist to identify patterns and possible triggers.</li>
+  </ol>
+
+  <h3>5. Learning Outcomes</h3>
+  <ul>
+    <li>Establish supportive classroom routines and relationships.</li>
+    <li>Use positive, preventive and inclusive behaviour strategies.</li>
+    <li>Respond to conflict in a calm and respectful manner.</li>
+    <li>Seek appropriate support when a learner's needs exceed the teacher's role.</li>
+  </ul>
+`,
+
+"307-B": `
+  <h3>BED307 – B) Mentoring in Education</h3>
+
+  <h3>1. Course Focus</h3>
+  <p>Mentoring is a supportive professional relationship that helps learners or colleagues reflect, set goals, build confidence and progress. It involves listening, guidance, constructive feedback, encouragement and appropriate boundaries.</p>
+
+  <h3>2. Objectives</h3>
+  <ul>
+    <li>Explain the purpose and characteristics of mentoring in education.</li>
+    <li>Differentiate mentoring, coaching, counselling and supervision at an introductory level.</li>
+    <li>Develop active listening, questioning and constructive feedback skills.</li>
+    <li>Support goal setting, reflection and learner progression.</li>
+    <li>Maintain confidentiality and understand professional boundaries.</li>
+  </ul>
+
+  <h3>3. Key Roles and Responsibilities of Mentor and Mentee</h3>
+  <ul>
+    <li>Trust, empathy, respect, communication and active listening.</li>
+    <li>Goal setting, action planning, monitoring progress and review.</li>
+    <li>Feedback that is specific, balanced, timely and actionable.</li>
+    <li>Peer mentoring, student mentoring and teacher induction support.</li>
+    <li>Ethics, confidentiality, safeguarding and referral to qualified professionals when needed.</li>
+  </ul>
+
+  <h3>4. Suggested Activities</h3>
+  <ol start="41">
+    <li>Prepare a mentoring conversation plan for a student facing an academic challenge.</li>
+    <li>Practice active listening and open-ended questions in pairs.</li>
+    <li>Create a SMART goal and a simple progress-review sheet.</li>
+    <li>Write a reflective note on how feedback can encourage improvement.</li>
+  </ol>
+
+  <h3>5. Learning Outcomes</h3>
+  <ul>
+    <li>Describe the mentoring process and its educational value.</li>
+    <li>Communicate supportively and listen without judgement.</li>
+    <li>Help a mentee set realistic goals and review progress.</li>
+    <li>Maintain appropriate professional boundaries.</li>
+  </ul>
+`,
+
+"308-A": `
+  <h3>BED308 – Enhancing Professional Capacities</h3>
+  <p><b>Credits:</b> 2 (1 + 1) &nbsp; | &nbsp; <b>Hours:</b> 30 &nbsp; | &nbsp; <b>Marks:</b> 50 (0 + 50)</p>
+
+  <h3>A) Student-teacher Support and Progression: Preparation for Teaching Profession and Entrance Exams</h3>
+
+  <h3>1. Course Focus</h3>
+  <p>This component supports the student teacher's transition into the teaching profession. It develops awareness of professional roles, recruitment and eligibility pathways, interview readiness, communication, subject knowledge revision and preparation for relevant entrance or eligibility examinations.</p>
+
+  <h3>2. Objectives</h3>
+  <ul>
+    <li>Understand the roles, responsibilities and ethical expectations of a school teacher.</li>
+    <li>Identify relevant professional pathways and eligibility requirements.</li>
+    <li>Develop communication, interview, presentation and application skills.</li>
+    <li>Plan systematic preparation for relevant teacher eligibility or recruitment examinations.</li>
+    <li>Recognise the importance of continuous professional learning.</li>
+  </ul>
+
+  <h3>3. Key Points</h3>
+  <ul>
+    <li>Professional identity, teacher competencies, code of conduct and lifelong learning.</li>
+    <li>Overview of teaching opportunities and recruitment pathways; verify current eligibility and rules from official notifications.</li>
+    <li>Resume/CV preparation, application writing, document organisation and professional email etiquette.</li>
+    <li>Interview preparation: self-introduction, pedagogy questions, classroom scenarios and demonstration lessons.</li>
+    <li>Communication skills, teamwork, problem-solving, digital literacy and time management.</li>
+    <li>Study planning, syllabus mapping, practice questions, mock tests and revision strategies for relevant examinations.</li>
+    <li>Professional development: workshops, reading, peer networks, reflective practice and further study.</li>
+  </ul>
+
+  <h3>4. Suggested Activities</h3>
+  <ol start="45">
+    <li>Prepare or update a professional teaching CV and a brief teaching philosophy.</li>
+    <li>Practice a mock teaching interview and record areas for improvement.</li>
+    <li>Prepare a sample demonstration lesson with a short self-evaluation.</li>
+    <li>Create a weekly study plan for a relevant teacher eligibility/recruitment examination.</li>
+    <li>Prepare a checklist of documents and official information to verify before applying.</li>
+  </ol>
+
+  <h3>5. Learning Outcomes</h3>
+  <ul>
+    <li>Present a clear professional profile and teaching philosophy.</li>
+    <li>Demonstrate basic interview and professional communication skills.</li>
+    <li>Plan examination preparation using realistic goals and revision.</li>
+    <li>Identify personal development needs and suitable learning opportunities.</li>
+  </ul>
+`,
+"308-B": `
+  <h3>B) Portfolio Management</h3>
+
+  <h3>1. Course Focus</h3>
+  <p>Portfolio management involves collecting, selecting, organising and reflecting on evidence of learning and professional growth. A portfolio should show progress, not merely accumulate papers.</p>
+
+  <h3>2. Learning Objectives</h3>
+  <ul>
+    <li>Explain the purpose, types and components of a student-teacher portfolio.</li>
+    <li>Select relevant evidence aligned with course outcomes and competencies.</li>
+    <li>Organise work systematically with dates, captions and reflections.</li>
+    <li>Use self-assessment and feedback to identify progress and future goals.</li>
+    <li>Maintain academic integrity, privacy and clear presentation.</li>
+  </ul>
+
+  <h3>3. Detailed Course Content / Key Areas</h3>
+  <ul>
+    <li>Purpose and types: working portfolio, assessment portfolio and professional portfolio.</li>
+    <li>Planning sections, index, evidence labels, chronology and cross-referencing.</li>
+    <li>Selecting lesson plans, assignments, observations, projects, certificates and feedback.</li>
+    <li>Reflective writing: context, action, evidence, learning and next steps.</li>
+    <li>Digital portfolio basics: file naming, folders, accessibility, backups and responsible sharing.</li>
+    <li>Confidentiality, consent, copyright, attribution and secure handling of learner information.</li>
+    <li>Reviewing, updating and presenting a portfolio for assessment or professional use.</li>
+  </ul>
+
+  <h3>4. Suggested Learning Activities and Practical Work</h3>
+  <ol start="50">
+    <li>Create a portfolio index and a consistent naming system for evidence.</li>
+    <li>Select one lesson plan and attach a reflection explaining what was learned.</li>
+    <li>Prepare an evidence matrix linking artefacts to course outcomes.</li>
+    <li>Review the portfolio for missing dates, captions, references and feedback.</li>
+    <li>Prepare a short oral presentation explaining professional growth during the semester.</li>
+  </ol>
+
+  <h3>5. Expected Learning Outcomes</h3>
+  <ul>
+    <li>Organise a coherent and evidence-based portfolio.</li>
+    <li>Explain how selected artefacts demonstrate professional competencies.</li>
+    <li>Reflect critically on strengths, challenges and next steps.</li>
+    <li>Maintain privacy, accuracy and academic integrity.</li>
+  </ul>
+`,
+
+
+};
+
+
+function showSubject(i) {
+  const s = subjects[i];
+  const folder = s[0];
+
+  document.getElementById("detailTitle").textContent =
+    folder + " — " + s[1];
+
+  document.getElementById("detailSubtitle").textContent = s[2];
+
+  const box = document.getElementById("detailContent");
+  const images = photoFiles[folder] || [];
+
+  let galleryHTML = "";
+
+  if (folder === "308-B") {
+    galleryHTML = `
+      <div class="empty">
+        No photographs are displayed for category 308-B.
+      </div>`;
+  } else if (images.length > 0) {
+    galleryHTML = `
+      <div class="gallery">
+        ${images.map(photo => `
+          <div>
+            <img
+              src="assets/${folder}/${photo}"
+              alt="${folder} activity"
+              loading="lazy"
+              onerror="this.parentElement.style.display='none'">
+            <p class="photo-caption">${photo}</p>
+          </div>
+        `).join("")}
+      </div>`;
+  } else {
+    galleryHTML = `<div class="empty">No photographs added yet.</div>`;
+  }
+
+  box.innerHTML = `
+    <h3>${s[1]}</h3>
+    <p>${s[2]}</p>
+
+    <div class="panel">
+  <h3>Academic Work</h3>
+  <div class="academic-text">
+    ${academicContent[folder] || "<p>Content coming soon.</p>"}
+  </div>
+</div>
+
+    <div class="panel">
+      <h3>Photographs & Activities</h3>
+      ${galleryHTML}
+    </div>
+  `;
+}
+
+const certificateFiles = [
+  "certificate1.jpg",
+  "certificate2.jpg",
+  "certificate3.jpg"
+];
+
+const certificateGallery = document.getElementById("certificateGallery");
+
+certificateFiles.forEach(file => {
+  const img = document.createElement("img");
+  img.src = "assets/certificates/" + file;
+  img.alt = "Certificate";
+  img.loading = "lazy";
+  img.onerror = () => img.remove();
+  certificateGallery.appendChild(img);
+});
+</script>
+
+</body>
+</html>
